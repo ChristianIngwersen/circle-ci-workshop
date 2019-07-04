@@ -36,7 +36,7 @@ jobs:
       - run: docker build -t $DOCKER_USER/app:$CIRCLE_SHA1 .
 
       # deploy the image
-      - run: docker push $DOCKER_USER/app:$CIRCLE_SHA
+      - run: docker push $DOCKER_USER/app:$CIRCLE_SHA1
 
 workflows:
   version: 2
